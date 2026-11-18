@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h2>Ordering System</h2>
+        <nav>
+            <a href="admin.html">Admin</a>
+            <a href="stock.html">Stock</a>
+            <a href="chatbot.html">Chatbot</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Customer Ordering Chatbot</h1>
+        <p>Chat with us to order your favourite drinks.</p>
+
+        <section class="card chat-card">
+            <div class="chat-header">
+                <h2>Drink Assistant</h2>
+                <span>Online</span>
+            </div>
+
+            <div id="chatMessages" class="chat-messages">
+                <div class="bot-message">
+                    Hello! Welcome. Type "Hi" to start ordering.
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <input
+                    type="text"
+                    id="userMessage"
+                    placeholder="Type your message..."
+                >
+
+                <button onclick="sendMessage()">Send</button>
+
+                <button onclick="startVoiceInput()" title="Voice Input">
+                    🎤
+                </button>
+            </div>
+
+            <p id="voiceStatus"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
