@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h2>Ordering System</h2>
+        <nav>
+            <a href="admin.html">Admin</a>
+            <a href="stock.html">Stock</a>
+            <a href="chatbot.html">Chatbot</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Admin Dashboard</h1>
+        <p>Manage your drinks and product details.</p>
+
+        <section class="card">
+            <h2>Add New Product</h2>
+
+            <form id="productForm">
+                <input type="text" id="productName"
+                    placeholder="Product Name" required>
+
+                <input type="number" id="productPrice"
+                    placeholder="Price" min="0.01"
+                    step="0.01" required>
+
+                <input type="number" id="productStock"
+                    placeholder="Stock Quantity" min="0"
+                    step="1" required>
+
+                <button type="submit">Add Product</button>
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+        <section class="card">
+            <h2>Product List</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="productTable">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

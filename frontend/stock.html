@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h2>Ordering System</h2>
+        <nav>
+            <a href="admin.html">Admin</a>
+            <a href="stock.html">Stock</a>
+            <a href="chatbot.html">Chatbot</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Stock Management</h1>
+        <p>Monitor and update product stock levels.</p>
+
+        <section class="card">
+            <h2>Available Stock</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="stockTable">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
